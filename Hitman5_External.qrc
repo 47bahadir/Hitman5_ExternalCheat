@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/Hitman5_External">
+        <file>hitman5.ico</file>
+    </qresource>
+</RCC>

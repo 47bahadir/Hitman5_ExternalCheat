@@ -1,0 +1,9 @@
+﻿   Qt/MSBuild: 3.3.1.1
+  Reading Qt configuration (C:/Qt/5.15.2/msvc2019/bin/qmake)
+   Qt: 5.15.2
+  Generating code
+  0 of 150 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Hitman5_External.vcxproj -> D:\VisualStudio_Project\Hitman5_External\Release\Hitman5_External.exe
