@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Hitman5_External_t {
-    QByteArrayData data[9];
-    char stringdata0[191];
+    QByteArrayData data[7];
+    char stringdata0[135];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,18 +35,14 @@ static const qt_meta_stringdata_Hitman5_External_t qt_meta_stringdata_Hitman5_Ex
 QT_MOC_LITERAL(0, 0, 16), // "Hitman5_External"
 QT_MOC_LITERAL(1, 17, 20), // "onHealthApplyClicked"
 QT_MOC_LITERAL(2, 38, 0), // ""
-QT_MOC_LITERAL(3, 39, 27), // "onR_PistolAmmo_ApplyClicked"
-QT_MOC_LITERAL(4, 67, 27), // "onL_PistolAmmo_ApplyClicked"
-QT_MOC_LITERAL(5, 95, 25), // "onX_Posation_ApplyClicked"
-QT_MOC_LITERAL(6, 121, 25), // "onY_Posation_ApplyClicked"
-QT_MOC_LITERAL(7, 147, 25), // "onZ_Posation_ApplyClicked"
-QT_MOC_LITERAL(8, 173, 17) // "onCheckBoxChanged"
+QT_MOC_LITERAL(3, 39, 25), // "onX_Posation_ApplyClicked"
+QT_MOC_LITERAL(4, 65, 25), // "onY_Posation_ApplyClicked"
+QT_MOC_LITERAL(5, 91, 25), // "onZ_Posation_ApplyClicked"
+QT_MOC_LITERAL(6, 117, 17) // "onCheckBoxChanged"
 
     },
     "Hitman5_External\0onHealthApplyClicked\0"
-    "\0onR_PistolAmmo_ApplyClicked\0"
-    "onL_PistolAmmo_ApplyClicked\0"
-    "onX_Posation_ApplyClicked\0"
+    "\0onX_Posation_ApplyClicked\0"
     "onY_Posation_ApplyClicked\0"
     "onZ_Posation_ApplyClicked\0onCheckBoxChanged"
 };
@@ -58,7 +54,7 @@ static const uint qt_meta_data_Hitman5_External[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       7,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -66,17 +62,13 @@ static const uint qt_meta_data_Hitman5_External[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   49,    2, 0x08 /* Private */,
-       3,    0,   50,    2, 0x08 /* Private */,
-       4,    0,   51,    2, 0x08 /* Private */,
-       5,    0,   52,    2, 0x08 /* Private */,
-       6,    0,   53,    2, 0x08 /* Private */,
-       7,    0,   54,    2, 0x08 /* Private */,
-       8,    0,   55,    2, 0x08 /* Private */,
+       1,    0,   39,    2, 0x08 /* Private */,
+       3,    0,   40,    2, 0x08 /* Private */,
+       4,    0,   41,    2, 0x08 /* Private */,
+       5,    0,   42,    2, 0x08 /* Private */,
+       6,    0,   43,    2, 0x08 /* Private */,
 
  // slots: parameters
-    QMetaType::Void,
-    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -93,12 +85,10 @@ void Hitman5_External::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->onHealthApplyClicked(); break;
-        case 1: _t->onR_PistolAmmo_ApplyClicked(); break;
-        case 2: _t->onL_PistolAmmo_ApplyClicked(); break;
-        case 3: _t->onX_Posation_ApplyClicked(); break;
-        case 4: _t->onY_Posation_ApplyClicked(); break;
-        case 5: _t->onZ_Posation_ApplyClicked(); break;
-        case 6: _t->onCheckBoxChanged(); break;
+        case 1: _t->onX_Posation_ApplyClicked(); break;
+        case 2: _t->onY_Posation_ApplyClicked(); break;
+        case 3: _t->onZ_Posation_ApplyClicked(); break;
+        case 4: _t->onCheckBoxChanged(); break;
         default: ;
         }
     }
@@ -134,13 +124,13 @@ int Hitman5_External::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 7)
+        if (_id < 5)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 7;
+        _id -= 5;
     }
     return _id;
 }

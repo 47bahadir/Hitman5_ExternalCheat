@@ -1,434 +1,383 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
-  <class>Hitman5_ExternalClass</class>
-  <widget class="QMainWindow" name="Hitman5_ExternalClass">
-    <property name="geometry">
-      <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>590</width>
-        <height>599</height>
-      </rect>
-    </property>
-    <property name="minimumSize">
-      <size>
-        <width>590</width>
-        <height>599</height>
-      </size>
-    </property>
-    <property name="windowTitle">
-      <string>HITMAN 5 External Cheat</string>
-    </property>
-    <property name="styleSheet">
-      <string notr="true">
-        QMainWindow {
-        background-color: #1e1e1e;
-        }
-        QWidget {
-        background-color: #1e1e1e;
-        color: #ffffff;
-        }
-        QLabel {
-        color: #ffffff;
-        }
-        QLineEdit {
-        background-color: #2d2d2d;
-        color: #ffffff;
-        border: 1px solid #3d3d3d;
-        border-radius: 3px;
-        padding: 2px;
-        }
-        QPushButton {
-        background-color: #3d3d3d;
-        color: #ffffff;
-        border: none;
-        border-radius: 3px;
-        padding: 5px;
-        }
-        QPushButton:hover {
-        background-color: #4d4d4d;
-        }
-        QPushButton:pressed {
-        background-color: #2d2d2d;
-        }
-        QCheckBox {
-        color: #ffffff;
-        }
-        QCheckBox::indicator {
-        width: 13px;
-        height: 13px;
-        border: 1px solid #3d3d3d;
-        border-radius: 2px;
-        }
-        QCheckBox::indicator:unchecked {
-        background-color: #2d2d2d;
-        }
-        QCheckBox::indicator:checked {
-        background-color: #4d4d4d;
-        }
-        QMessageBox {
-        background-color: #1e1e1e;
-        color: #ffffff;
-        }
-        QMessageBox QLabel {
-        color: #ffffff;
-        }
-        QMessageBox QPushButton {
-        background-color: #3d3d3d;
-        color: #ffffff;
-        border: none;
-        border-radius: 3px;
-        padding: 5px 10px;
-        min-width: 60px;
-        }
-        QMessageBox QPushButton:hover {
-        background-color: #4d4d4d;
-        }
-        QMessageBox QPushButton:pressed {
-        background-color: #2d2d2d;
-        }
-      </string>
-    </property>
-    <widget class="QWidget" name="centralWidget">
-      <layout class="QHBoxLayout" name="horizontalLayout_7">
+ <class>Hitman5_ExternalClass</class>
+ <widget class="QMainWindow" name="Hitman5_ExternalClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>590</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>590</width>
+    <height>599</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>HITMAN 5 External Cheat</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+     QMainWindow {
+     background-color: #1e1e1e;
+     }
+     QWidget {
+     background-color: #1e1e1e;
+     color: #ffffff;
+     }
+     QLabel {
+     color: #ffffff;
+     }
+     QLineEdit {
+     background-color: #2d2d2d;
+     color: #ffffff;
+     border: 1px solid #3d3d3d;
+     border-radius: 3px;
+     padding: 2px;
+     }
+     QPushButton {
+     background-color: #3d3d3d;
+     color: #ffffff;
+     border: none;
+     border-radius: 3px;
+     padding: 5px;
+     }
+     QPushButton:hover {
+     background-color: #4d4d4d;
+     }
+     QPushButton:pressed {
+     background-color: #2d2d2d;
+     }
+     QCheckBox {
+     color: #ffffff;
+     }
+     QCheckBox::indicator {
+     width: 13px;
+     height: 13px;
+     border: 1px solid #3d3d3d;
+     border-radius: 2px;
+     }
+     QCheckBox::indicator:unchecked {
+     background-color: #2d2d2d;
+     }
+     QCheckBox::indicator:checked {
+     background-color: #0078d4;
+     }
+     QMessageBox {
+     background-color: #1e1e1e;
+     color: #ffffff;
+     }
+     QMessageBox QLabel {
+     color: #ffffff;
+     }
+     QMessageBox QPushButton {
+     background-color: #3d3d3d;
+     color: #ffffff;
+     border: none;
+     border-radius: 3px;
+     padding: 5px 10px;
+     min-width: 60px;
+     }
+     QMessageBox QPushButton:hover {
+     background-color: #4d4d4d;
+     }
+     QMessageBox QPushButton:pressed {
+     background-color: #2d2d2d;
+     }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_7">
+    <item>
+     <layout class="QVBoxLayout" name="Change_Value">
+      <property name="spacing">
+       <number>30</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-          <layout class="QVBoxLayout" name="Change_Value">
-            <property name="spacing">
-              <number>30</number>
-            </property>
-            <item>
-              <layout class="QHBoxLayout" name="horizontalLayout">
-                <item>
-                  <widget class="QLabel" name="Health_label">
-                    <property name="font">
-                      <font>
-                        <family>Bell MT</family>
-                        <pointsize>13</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
-                      </font>
-                    </property>
-                    <property name="text">
-                      <string>Health         </string>
-                    </property>
-                  </widget>
-                </item>
-                <item>
-                  <widget class="QLineEdit" name="Health_EditLine">
-                    <property name="sizePolicy">
-                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                      </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                      <size>
-                        <width>100</width>
-                        <height>20</height>
-                      </size>
-                    </property>
-                  </widget>
-                </item>
-                <item>
-                  <widget class="QPushButton" name="Health_ApplyButton">
-                    <property name="sizePolicy">
-                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                      </sizepolicy>
-                    </property>
-                    <property name="text">
-                      <string>Apply</string>
-                    </property>
-                  </widget>
-                </item>
-              </layout>
-            </item>
-            <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_2">
-                <item>
-                  <widget class="QLabel" name="R_PistolAmmo_label">
-                    <property name="font">
-                      <font>
-                        <family>Bell MT</family>
-                        <pointsize>13</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
-                      </font>
-                    </property>
-                    <property name="text">
-                      <string>R_PistolAmmo</string>
-                    </property>
-                  </widget>
-                </item>
-                <item>
-                  <widget class="QLineEdit" name="R_PistolAmmo_EditLine">
-                    <property name="sizePolicy">
-                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                      </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                      <size>
-                        <width>100</width>
-                        <height>20</height>
-                      </size>
-                    </property>
-                  </widget>
-                </item>
-                <item>
-                  <widget class="QPushButton" name="R_PistolAmmo_ApplyButton">
-                    <property name="sizePolicy">
-                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                      </sizepolicy>
-                    </property>
-                    <property name="text">
-                      <string>Apply</string>
-                    </property>
-                  </widget>
-                </item>
-              </layout>
-            </item>
-            <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_6">
-                <item>
-                  <widget class="QLabel" name="L_PistolAmmo_label">
-                    <property name="font">
-                      <font>
-                        <family>Bell MT</family>
-                        <pointsize>13</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
-                      </font>
-                    </property>
-                    <property name="text">
-                      <string>L_PistolAmmo</string>
-                    </property>
-                  </widget>
-                </item>
-                <item>
-                  <widget class="QLineEdit" name="L_PistolAmmo_EditLine">
-                    <property name="sizePolicy">
-                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                      </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                      <size>
-                        <width>100</width>
-                        <height>20</height>
-                      </size>
-                    </property>
-                  </widget>
-                </item>
-                <item>
-                  <widget class="QPushButton" name="L_PistolAmmo_ApplyButton">
-                    <property name="sizePolicy">
-                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                      </sizepolicy>
-                    </property>
-                    <property name="text">
-                      <string>Apply</string>
-                    </property>
-                  </widget>
-                </item>
-              </layout>
-            </item>
-            <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_3">
-                <item>
-                  <widget class="QLabel" name="X_Posation_label">
-                    <property name="font">
-                      <font>
-                        <family>Bell MT</family>
-                        <pointsize>13</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
-                      </font>
-                    </property>
-                    <property name="text">
-                      <string>X Posation  </string>
-                    </property>
-                  </widget>
-                </item>
-                <item>
-                  <widget class="QLineEdit" name="X_Posation_EditLine">
-                    <property name="sizePolicy">
-                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                      </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                      <size>
-                        <width>100</width>
-                        <height>16777215</height>
-                      </size>
-                    </property>
-                  </widget>
-                </item>
-                <item>
-                  <widget class="QPushButton" name="X_Posation_ApplyButton">
-                    <property name="sizePolicy">
-                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                      </sizepolicy>
-                    </property>
-                    <property name="text">
-                      <string>Apply</string>
-                    </property>
-                  </widget>
-                </item>
-              </layout>
-            </item>
-            <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_4">
-                <item>
-                  <widget class="QLabel" name="Y_Posation_label">
-                    <property name="font">
-                      <font>
-                        <family>Bell MT</family>
-                        <pointsize>13</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
-                      </font>
-                    </property>
-                    <property name="text">
-                      <string>Y Posation  </string>
-                    </property>
-                  </widget>
-                </item>
-                <item>
-                  <widget class="QLineEdit" name="Y_Posation_EditLine">
-                    <property name="sizePolicy">
-                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                      </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                      <size>
-                        <width>100</width>
-                        <height>20</height>
-                      </size>
-                    </property>
-                  </widget>
-                </item>
-                <item>
-                  <widget class="QPushButton" name="Y_Posation_ApplyButton">
-                    <property name="sizePolicy">
-                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                      </sizepolicy>
-                    </property>
-                    <property name="text">
-                      <string>Apply</string>
-                    </property>
-                  </widget>
-                </item>
-              </layout>
-            </item>
-            <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_5">
-                <item>
-                  <widget class="QLabel" name="Z_Posation_label">
-                    <property name="font">
-                      <font>
-                        <family>Bell MT</family>
-                        <pointsize>13</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
-                      </font>
-                    </property>
-                    <property name="text">
-                      <string>Z Posation  </string>
-                    </property>
-                  </widget>
-                </item>
-                <item>
-                  <widget class="QLineEdit" name="Z_Posation_EditLine">
-                    <property name="sizePolicy">
-                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                      </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                      <size>
-                        <width>100</width>
-                        <height>20</height>
-                      </size>
-                    </property>
-                  </widget>
-                </item>
-                <item>
-                  <widget class="QPushButton" name="Z_Posation_ApplyButton">
-                    <property name="sizePolicy">
-                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                      </sizepolicy>
-                    </property>
-                    <property name="text">
-                      <string>Apply</string>
-                    </property>
-                  </widget>
-                </item>
-              </layout>
-            </item>
-            <item>
-              <layout class="QVBoxLayout" name="verticalLayout">
-                <property name="spacing">
-                  <number>30</number>
-                </property>
-                <item>
-                  <widget class="QCheckBox" name="LockHealth_checkBox">
-                    <property name="font">
-                      <font>
-                        <family>Bell MT</family>
-                        <pointsize>13</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
-                      </font>
-                    </property>
-                    <property name="text">
-                      <string>Lock Health</string>
-                    </property>
-                  </widget>
-                </item>
-                <item>
-                  <widget class="QCheckBox" name="LockAmmo_checkBox">
-                    <property name="font">
-                      <font>
-                        <family>Bell MT</family>
-                        <pointsize>13</pointsize>
-                        <weight>75</weight>
-                        <bold>true</bold>
-                      </font>
-                    </property>
-                    <property name="text">
-                      <string>Lock Ammo</string>
-                    </property>
-                  </widget>
-                </item>
-              </layout>
-            </item>
-          </layout>
+         <widget class="QLabel" name="Health_label">
+          <property name="font">
+           <font>
+            <family>Bell MT</family>
+            <pointsize>13</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Health         </string>
+          </property>
+         </widget>
         </item>
-      </layout>
-    </widget>
+        <item>
+         <widget class="QLineEdit" name="Health_EditLine">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Health_ApplyButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Apply</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="X_Posation_label">
+          <property name="font">
+           <font>
+            <family>Bell MT</family>
+            <pointsize>13</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>X Posation  </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="X_Posation_EditLine">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="X_Posation_ApplyButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Apply</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="Y_Posation_label">
+          <property name="font">
+           <font>
+            <family>Bell MT</family>
+            <pointsize>13</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Y Posation  </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="Y_Posation_EditLine">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Y_Posation_ApplyButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Apply</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="Z_Posation_label">
+          <property name="font">
+           <font>
+            <family>Bell MT</family>
+            <pointsize>13</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Z Posation  </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="Z_Posation_EditLine">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Z_Posation_ApplyButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Apply</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>30</number>
+        </property>
+        <item>
+         <widget class="QCheckBox" name="InfiniteHealth_checkBox">
+          <property name="font">
+           <font>
+            <family>Bell MT</family>
+            <pointsize>13</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Infinite Health</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="UnlimitedBullets_checkBox">
+          <property name="font">
+           <font>
+            <family>Bell MT</family>
+            <pointsize>13</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Unlimited Bullets</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="NoSpread_checkBox">
+          <property name="font">
+           <font>
+            <family>Bell MT</family>
+            <pointsize>13</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>No Spread</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="NoRecoil_checkBox">
+          <property name="font">
+           <font>
+            <family>Bell MT</family>
+            <pointsize>13</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>No Recoil</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="NonStopShooting_checkBox">
+          <property name="font">
+           <font>
+            <family>Bell MT</family>
+            <pointsize>13</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Non-stop shooting</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
-  <layoutdefault spacing="6" margin="11"/>
-  <resources>
-    <include location="Hitman5_External.qrc"/>
-  </resources>
-  <connections/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Hitman5_External.qrc"/>
+ </resources>
+ <connections/>
 </ui>
