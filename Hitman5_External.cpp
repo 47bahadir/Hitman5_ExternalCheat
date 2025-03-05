@@ -14,7 +14,7 @@ Hitman5_External::Hitman5_External(QWidget *parent)
 	//call user function
 	processInfo();
 
-	//connect the apply button
+	//connect the apply button 
 	connect(ui.Health_ApplyButton, &QPushButton::clicked, this, &Hitman5_External::onHealthApplyClicked);
 	connect(ui.X_Posation_ApplyButton, &QPushButton::clicked, this, &Hitman5_External::onX_Posation_ApplyClicked);
 	connect(ui.Y_Posation_ApplyButton, &QPushButton::clicked, this, &Hitman5_External::onY_Posation_ApplyClicked);
@@ -24,6 +24,7 @@ Hitman5_External::Hitman5_External(QWidget *parent)
 	connect(ui.InfiniteHealth_checkBox, &QCheckBox::stateChanged, this, &Hitman5_External::onCheckBoxChanged);
 	connect(ui.UnlimitedBullets_checkBox, &QCheckBox::stateChanged, this, &Hitman5_External::onCheckBoxChanged);
 	connect(ui.NoRecoil_checkBox, &QCheckBox::stateChanged, this, &Hitman5_External::onCheckBoxChanged);
+	connect(ui.oneShootKill_checkBox, &QCheckBox::stateChanged, this, &Hitman5_External::onCheckBoxChanged);
 	connect(ui.NoSpread_checkBox, &QCheckBox::stateChanged, this, &Hitman5_External::onCheckBoxChanged);
 	connect(ui.NonStopShooting_checkBox, &QCheckBox::stateChanged, this, &Hitman5_External::onCheckBoxChanged);
 }
@@ -256,6 +257,23 @@ void Hitman5_External::onCheckBoxChanged()
 
 			//HMA.exe+55ED0B - 7A 12                 - jp HMA.exe+55ED1F
 			mem::patchEx(hProc, (BYTE*)(modBaseAddy + 0x55ED0B), (BYTE*)"\x7A\x12", 2);
+		}
+	}
+
+	//oneShootKill_checkBox
+	if (checkbox == ui.oneShootKill_checkBox)
+	{
+		//Checked
+		if (checkbox->isChecked())
+		{
+			//HMA.exe+5FADB6 - 90 90                 - nop nop
+			mem::nopEx(hProc, (BYTE*)(modBaseAddy + 0x5FADB6), 2);
+		}
+		//UnChecked
+		else
+		{
+			//HMA.exe+5FADB6 - 7A 0A                 - jp HMA.exe+5FADC2
+			mem::patchEx(hProc, (BYTE*)(modBaseAddy + 0x5FADB6), (BYTE*)"\x7A\x0A", 2);
 		}
 	}
 

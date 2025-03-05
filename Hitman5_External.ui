@@ -354,6 +354,21 @@
          </widget>
         </item>
         <item>
+           <widget class="QCheckBox" name="oneShootKill_checkBox">
+             <property name="font">
+               <font>
+                 <family>Bell MT</family>
+                 <pointsize>13</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+               </font>
+             </property>
+             <property name="text">
+               <string>One Shoot Kill</string>
+             </property>
+           </widget>
+        </item>
+        <item>
          <widget class="QCheckBox" name="NonStopShooting_checkBox">
           <property name="font">
            <font>

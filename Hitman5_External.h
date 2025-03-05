@@ -21,7 +21,6 @@ private:
 	HANDLE hProc;                               //Process Handle
 	uintptr_t modBaseAddy;                      //Module Base Address
 	uintptr_t character_BaseAddy;				//Character Base Address
-	uintptr_t ammo_BaseAddy;                    //Ammo Base Address
 	uintptr_t position_BaseAddy;                //Position Base Address
 	uintptr_t health_Addy;                      //Health Address
 	float health;								//Health value
