@@ -16,6 +16,7 @@ Hitman5_External::Hitman5_External(QWidget *parent)
 
 	//connect the apply button 
 	connect(ui.Health_ApplyButton, &QPushButton::clicked, this, &Hitman5_External::onHealthApplyClicked);
+	connect(ui.Score_ApplyButton, &QPushButton::clicked, this, &Hitman5_External::onScoreApplyClicked);
 	connect(ui.X_Posation_ApplyButton, &QPushButton::clicked, this, &Hitman5_External::onX_Posation_ApplyClicked);
 	connect(ui.Y_Posation_ApplyButton, &QPushButton::clicked, this, &Hitman5_External::onY_Posation_ApplyClicked);
 	connect(ui.Z_Posation_ApplyButton, &QPushButton::clicked, this, &Hitman5_External::onZ_Posation_ApplyClicked);
@@ -65,6 +66,9 @@ void Hitman5_External::processInfo()
 	//Get Health address
 	health_Addy = mem::findDMAAddy(hProc, character_BaseAddy, { 0x780,0x24,0xA2C,0x218});
 
+	//Get Score address
+	score_Addy = modBaseAddy + 0xD64A78;
+
 	//Get XYZ position 
 	x_position_Addy = mem::findDMAAddy(hProc, position_BaseAddy, { 0x2C,0xE80 });
 	y_position_Addy = x_position_Addy + 0x4;
@@ -102,6 +106,34 @@ void Hitman5_External::onHealthApplyClicked()
 	else
 	{
 		QMessageBox::warning(this, "Error", "Failed to read health value !");
+		return;
+	}
+}
+
+
+void Hitman5_External::onScoreApplyClicked()
+{
+	//check input value is valid or not
+	bool ok;
+	int newScore = ui.Score_EditLine->text().toInt(&ok);
+	if (!ok)
+	{
+		QMessageBox::warning(this, "Error", "Please enter a valid integer number for Score!");
+		return;
+	}
+
+	//Check Score value is valid or not
+	BOOL retRPM = ReadProcessMemory(hProc, (void*)score_Addy, &g_score, sizeof(g_score), 0);
+	if (retRPM)
+	{
+		if (!WriteProcessMemory(hProc, (void*)score_Addy, &newScore, sizeof(newScore), 0))
+		{
+			QMessageBox::warning(this, "Error", "Failed to write score value !");
+		}
+	}
+	else
+	{
+		QMessageBox::warning(this, "Error", "Failed to read score value !");
 		return;
 	}
 }

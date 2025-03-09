@@ -24,6 +24,8 @@ private:
 	uintptr_t position_BaseAddy;                //Position Base Address
 	uintptr_t health_Addy;                      //Health Address
 	float health;								//Health value
+	uintptr_t score_Addy;                     //Score Address
+	int g_score;					         	//Score value
 	uintptr_t x_position_Addy;                  //X Position Address
 	float x_position;							//X Position Value
 	uintptr_t y_position_Addy;                  //Y Position Address
@@ -37,6 +39,7 @@ private:
 private slots:
 	//Apply Button
     void onHealthApplyClicked();
+	void onScoreApplyClicked();
 	void onX_Posation_ApplyClicked();
 	void onY_Posation_ApplyClicked();
 	void onZ_Posation_ApplyClicked();

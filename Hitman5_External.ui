@@ -145,6 +145,54 @@
        </layout>
       </item>
       <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="Score_label">
+          <property name="font">
+           <font>
+            <family>Bell MT</family>
+            <pointsize>13</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Score</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="Score_EditLine">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Score_ApplyButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Apply</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
        <layout class="QHBoxLayout" name="horizontalLayout_3">
         <item>
          <widget class="QLabel" name="X_Posation_label">
@@ -354,19 +402,19 @@
          </widget>
         </item>
         <item>
-           <widget class="QCheckBox" name="oneShootKill_checkBox">
-             <property name="font">
-               <font>
-                 <family>Bell MT</family>
-                 <pointsize>13</pointsize>
-                 <weight>75</weight>
-                 <bold>true</bold>
-               </font>
-             </property>
-             <property name="text">
-               <string>One Shoot Kill</string>
-             </property>
-           </widget>
+         <widget class="QCheckBox" name="oneShootKill_checkBox">
+          <property name="font">
+           <font>
+            <family>Bell MT</family>
+            <pointsize>13</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>One Shoot Kill</string>
+          </property>
+         </widget>
         </item>
         <item>
          <widget class="QCheckBox" name="NonStopShooting_checkBox">
